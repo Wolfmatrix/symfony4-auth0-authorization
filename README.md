@@ -1,14 +1,14 @@
-##Example of Auth0 User Authorization in Symfony
+## Example of Auth0 User Authorization in Symfony
 This example project of Symfony provides the implementation of Authorization and Authentication of Auth0's user in
 Symfony 4 api endpoints.
 
-###Requirements
+### Requirements
 * PHP 7+
 * Symfony 4+
 * [Auth0 Jwt Bundle](https://github.com/auth0/jwt-auth-bundle)
 * [Symfony Security Bundle](https://github.com/symfony/security-bundle)
 
-###Installation
+### Installation
 To implement Authorization and Authentication, install the following dependencies:
 
 **Auth0 Jwt Bundle**
@@ -23,11 +23,11 @@ To implement Authorization and Authentication, install the following dependencie
 
 `composer require sensio/framework-extra-bundle`
 
-###Documentation
+### Documentation
 For more information on how to Authorize Auth0 user, follow [this article](). Here, I will start from decoding the
 fetched Access Token.
 
-###Decode Access Token
+### Decode Access Token
 Inject the Access Token to User Provider to decode it or get user profile. User Provider is a class that decode the 
 Access token. To create User Provider class, **install Auth0 Jwt Bundle**. The User Provider class decodes the token for
 those users who are assigned with certain roles which is later used in the route while accessing api endpoints.
@@ -62,7 +62,7 @@ jwt_auth:
 ```
 The final step is to access api endpoints.
 
-###Access Api Endpoints
+### Access Api Endpoints
 Before, accessing the api endpoints, configure **security.yml** file file under the key security’s firewall at 
 **config/packages/security.yaml** for the url pattern **/api**. 
 ```
