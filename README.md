@@ -24,7 +24,7 @@ To implement Authorization and Authentication, install the following dependencie
 `composer require sensio/framework-extra-bundle`
 
 ### Documentation
-For more information on how to Authorize Auth0 user, follow [this article](). Here, I will start from decoding the
+For more information on how to Authorize Auth0 user, follow [this article](https://wolfmatrix.com/all/how-to-authorize-auth0-user-in-symfony-4/). Here, I will start from decoding the
 fetched Access Token.
 
 ### Decode Access Token
